@@ -1,0 +1,27 @@
+{
+  "name": "express_post_practice",
+  "version": "1.0.0",
+  "description": "Practice App for creating posts w/ Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grooveIsAll/expressPostPractice.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "grooveIsAll",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grooveIsAll/expressPostPractice/issues"
+  },
+  "homepage": "https://github.com/grooveIsAll/expressPostPractice#readme",
+  "dependencies": {
+    "ejs": "^2.4.2",
+    "express": "^4.14.0"
+  }
+}
