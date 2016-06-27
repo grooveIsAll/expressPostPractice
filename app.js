@@ -5,11 +5,19 @@ const app = express();
 const campgrounds = [
   { name: 'Camp Snoopy', image: 'https://farm7.staticflickr.com/6103/6333668591_90e7c2bc72.jpg' },
   { name: 'Camp Scooby', image: 'https://farm4.staticflickr.com/3446/3801715614_f9713f7211.jpg' },
+  { name: 'Camp Santa\'s Little Helper', image: 'https://farm8.staticflickr.com/7512/15558076393_8c1d4b9cf8.jpg' },
+  { name: 'Camp Snoopy', image: 'https://farm7.staticflickr.com/6103/6333668591_90e7c2bc72.jpg' },
+  { name: 'Camp Scooby', image: 'https://farm4.staticflickr.com/3446/3801715614_f9713f7211.jpg' },
+  { name: 'Camp Santa\'s Little Helper', image: 'https://farm8.staticflickr.com/7512/15558076393_8c1d4b9cf8.jpg' },
+  { name: 'Camp Snoopy', image: 'https://farm7.staticflickr.com/6103/6333668591_90e7c2bc72.jpg' },
+  { name: 'Camp Scooby', image: 'https://farm4.staticflickr.com/3446/3801715614_f9713f7211.jpg' },
   { name: 'Camp Santa\'s Little Helper', image: 'https://farm8.staticflickr.com/7512/15558076393_8c1d4b9cf8.jpg' }
 ];
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+app.use(express.static(__dirname + '/views'));
 
 app.set('view engine', 'ejs');
 
